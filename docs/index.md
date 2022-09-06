@@ -65,9 +65,23 @@ Example response:
 
 ## Which proxy do you need?
 
-* Tor - Blocked on Cloudflare/Akamai sites
-* Open Proxy - Blocked on Cloudflare sites
-* Private Proxy - Blocked on few sites
+### Tor
+* Blocked on Cloudflare/Akamai sites
+* IPv6 and IPv4
+* Geolocated mostly in Europe and the United States
+* Mostly datacenter IPs
+
+### Open Proxy
+* Blocked on Cloudflare sites
+* IPv4 only
+* Geolocation varies
+* Blend of datacenter and residential IPs
+
+### Private Proxy
+* Blocked on few sites
+* IPv4 and IPv6 (?)
+* Geolocation varies
+* Blend of datacenter and residential IPs
 
 Currently all of these routes experience the same cache time, but in the future, harsher cache
 times may be imposed to reduce load on private proxies.
@@ -75,6 +89,10 @@ times may be imposed to reduce load on private proxies.
 ## Ratelimiting
 
 There is not ratelimiting at the moment. However, responses are cached for 60 seconds. If you have a use case that needs this value lowered, please contact us.
+
+## Donations
+
+This is a free project. At the moment I don't have plans to add paid tiers. If you would like to donate, our Bitcoin and Monero wallets can be found [here](https://riverside.rocks/services).
 
 ## Credits
 
