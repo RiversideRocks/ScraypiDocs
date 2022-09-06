@@ -6,8 +6,8 @@ Welcome to Scraypi, an easy-to-use RESTful API to scrape websites.
 
 * `GET /` - Information about the project in JSON format
 * `GET /api/v1/tor` - Scrapes a site and returns JSON over Tor proxy
-* `GET /api/v1/proxy` - ~Scrapes a site via an open proxy~
-* `GET /api/v1/proxy-v2` - ~Scrapes the site via a private proxy~
+* `GET /api/v1/proxy` - ~~Scrapes a site via an open proxy~~ (Coming Soon)
+* `GET /api/v1/proxy-v2` - ~~Scrapes the site via a private proxy~~ (Coming Soon)
 
 ## Example
 
@@ -88,7 +88,7 @@ times may be imposed to reduce load on private proxies.
 
 ## Ratelimiting
 
-There is not ratelimiting at the moment. However, responses are cached for 60 seconds. If you have a use case that needs this value lowered, please contact us.
+There is not ratelimiting at the moment. However, responses are cached for 60 seconds. To see if your request has been ratelimited, check the `X-Cache` header. If it read "MISS", it has bypassed the cache. If it reads "HIT", it has temporary hit our cache server. If you have a use case that needs this value lowered, please contact us.
 
 ## Donations
 
@@ -96,6 +96,6 @@ This is a free project. At the moment I don't have plans to add paid tiers. If y
 
 ## Credits
 
-Our backend uses [Python](https://python.org), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), and [Tor](https://www.torproject.org).
+Our backend uses [Python](https://python.org), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), [Varnish](https://varnish-cache.org/), [Caddy](https://caddyserver.com) and [Tor](https://www.torproject.org).
 
 This project is managed by [Riverside Rocks](https://riverside.rocks).
