@@ -69,6 +69,15 @@ Example response:
 * Open Proxy - Blocked on Cloudflare sites
 * Private Proxy - Blocked on few sites
 
+Currently all of these routes experience the same cache time, but in the future, harsher cache
+times may be imposed to reduce load on private proxies.
+
 ## Ratelimiting
 
 There is not ratelimiting at the moment. However, responses are cached for 60 seconds. If you have a use case that needs this value lowered, please contact us.
+
+## Credits
+
+Our backend uses [Python](https://python.org), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), and [Tor](https://www.torproject.org).
+
+This project is managed by [Riverside Rocks](https://riverside.rocks).
