@@ -1,6 +1,6 @@
 # Scraypi (scray-p-i)
 
-Welcome to Scraypi, an easy-to-use RESTful API to scrape websites.
+Welcome to Scraypi, an easy-to-use and free RESTful API to scrape websites.
 
 ## Routes
 
